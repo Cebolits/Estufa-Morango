@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Monitoramento da estufa</title>
+</head>
+
+<body>
+    <div class="content2 absolute justify-center">
+        <div class="cabgeral">
+            <div class="textotemp1">Morangos Autopoéticos</div>
+        </div>
+    </div>
+
+    <div class="content flex justify-center">
+        <div class="dimension2">
+            <div class="dimension2 flex justify-center">
+                <div class="temperatura1">
+                    <div class="flex"></div>
+                    <div class="tempcab1">
+                        <img class="imagemtemp1" src="../Imagens/temperaturafora.png" alt="">
+                        <div class="textotemp1">Temperatura Externa</div>
+                      </div> 
+                     <div class="data flex column">
+                    <span class="sensor-temperatura1">--°C</span>
+                    </div>
+                    </div>
+                
+
+                <div class="temperatura2">
+                    <div class="flex"></div>
+                    <div class="tempcab2">
+                        <img class="imagemtemp2" src="../Imagens/temperaturadentro.png" alt="">
+                        <div class="textotemp2">Temperatura Interna</div>
+                    </div>
+                     <div class="data flex column">
+                    <span class="sensor-temperatura2">--°C</span>
+                    </div>
+                </div>
+
+                <div class="flex"></div>
+            </div>
+        </div>
+
+        <div class="dimension3">
+            <div class="dimension3 flex justify-center">
+                <div class="umidadeext">
+                    <div class="flex"></div>
+                    <div class="umidadeextcab">
+                        <img class="imagemumidadeext" src="../Imagens/humidadefora.png" alt="">
+                        <div class="textoumidadeext">Umidade Externa</div>
+                        </div>
+                         <div class="data flex column">
+                    <span class="sensor-umidade">--%</span>
+                        
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="umidadesolo">
+                    <div class="flex"></div>
+                    <div class="umidadesolocab">
+                        <img class="imagemumidadesolo" src="../Imagens/Humidadeplanta.png" alt="">
+                        <div class="textoumidadesolo">Umidade do Solo</div>
+                          </div>
+                         <div class="data flex column">
+                    <span class="sensor-umidadesolo">--%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tanque">
+                <div class="tanquecab">
+                    <img class="imagemtanque" src="../Imagens/gardening.png" alt="">
+                    <div class="textotanque">Tanque d'água</div>
+                </div>
+                      
+                         <div class="data flex column">
+                    <span class="sensor-tanque">--%</span>
+                <img class="tanquemedida" src="../Imagens/tanque.png" alt="">
+                
+                
+                 </div>
+                </div>
+        </div>
+
+        <div class="dimension4">
+            <div class="botoneira">
+                <div class="botoneiracab">
+                    <img class="imagembotoneira" src="../Imagens/manual.png" alt="">
+                    <div class="textobotoneira">Controle Manual</div>
+                    
+                    
+                </div>
+                
+                
+                <div class="bot1">
+                    <div class="flex">
+                    <label class="switch1">
+                        <input type="checkbox">
+                        <span class="slider1 round1"></span>
+                    </label>
+                    
+                    <div class="textobot1">Bomba de Irrigação</div>
+                </div> 
+            </div>
+            
+            
+
+            <div class="bot2">
+                <div class="flex">
+                <label class="switch2">
+                    <input type="checkbox">
+                    <span class="slider2 round2"></span>
+                </label>
+                
+                <div class="textobot2">Comporta</div>
+            </div> 
+        </div>
+                
+                
+        <div class="bot3">
+            <div class="flex">
+            <label class="switch3">
+                <input type="checkbox">
+                <span class="slider3 round3"></span>
+            </label>
+            
+            <div class="textobot3">Cooler de ventilação</div>
+        </div> 
+    </div>
+                </div>
+                
+                        <div class="luminosidade column">
+                            <div class="luminosidadecab">
+                                <img class="imagemluminosidade" src="../Imagens/luz.png" alt="">
+                                <div class="textoluminosidade">Luminosidade</div>
+                                </div>
+                              <div class="data flex">
+                    <span class="sensor-luz">--%</span>
+                            
+                </div>
+                              
+                       
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./sensorLoader.js"></script>
+</body>
+
+</html>

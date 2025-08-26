@@ -1,0 +1,66 @@
+const pool = require('../startup/db');
+
+class SensorController {
+    static async create(req, res) {
+        const {temperaturaExterna, temperaturaInterna,luminosidade,umidadeInterna,umidadeExterna,tanque,manual } = req.body;
+        if (!temperaturaExterna || !temperaturaInterna|| !luminosidade || !umidadeInterna|| !umidadeExterna || !tanque|| !manual)
+            return res.status(400).send({ message: "Dados inválidos" });
+        
+
+         try {
+            const [result] = await pool.execute(
+                'INSERT INTO sensores (datas, temperaturaExterna, temperaturaInterna,luminosidade,umidadeInterna,umidadeExterna,tanque,manual) VALUES (now(),?,?,?,?,?,?,?)',
+                [temperaturaExterna, temperaturaInterna,luminosidade,umidadeInterna,umidadeExterna,tanque,manual]
+            );
+
+
+             return res.status(201).send({
+                message: "Pessoa inserida com sucesso",
+                body: { id: result.insertId, temperaturaExterna, temperaturaInterna,luminosidade,umidadeInterna,umidadeExterna,tanque,manual}
+            });
+        } catch (error) {
+            return res.status(500).send({ error: error.message });
+        }
+    }
+
+    static async getAll(req, res) {
+        try {
+            const [rows] = await pool.execute('SELECT * FROM sensores');
+            return res.status(200).json(rows);
+        } catch (error) {
+            return res.status(500).send({ error: error.message });
+        }
+    }
+
+    static async sensorTest(req, res) {
+        const { nome, valor } = req.body
+        try {
+            await pool.execute(
+                'INSERT INTO sensores (nome, valor) VALUES (?, ?)',
+                [nome, valor]
+            );
+
+            return res.status(200).json({response: `Sensores ${nome} cadastrado com sucesso!`});
+        } catch (error) {
+            return res.status(500).send({ error: error.message });
+        }
+    }
+
+    static async deleteById(req, res) {
+        const { id } = req.params;
+
+        try {
+            const [result] = await pool.execute('DELETE FROM sensores WHERE id = ?', [id]);
+
+            if (result.affectedRows === 0) {
+                return res.status(404).send({ message: "Dados do sensor não encontrados" });
+            }
+
+            return res.status(200).send({ message: "Dados do sensor removidos com sucesso" });
+        } catch (error) {
+            return res.status(500).send({ error: error.message });
+        }
+    }
+}
+
+module.exports = SensorController;

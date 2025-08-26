@@ -1,0 +1,803 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');  
+
+
+ *{ 
+    -webkit-font-smoothing: antialiased; 
+    box-sizing: border-box; 
+
+     
+
+    } 
+    html, 
+    body { 
+    margin: 0px; 
+    height: 100%; 
+    } 
+    button:focus-visible { 
+    outline: 2px solid #4a90e2 !important; 
+    outline: -webkit-focus-ring-color auto 5px !important; 
+    } 
+
+*{  
+
+    font-family: 'Roboto';
+    padding: 0px;  
+    margin: 0px;  
+    box-sizing: border-box;  
+}  
+body{  
+    background-color: #2C3B60;  
+    min-height: 100vh ;  
+    background-image: url('../Imagens/mr.png'); 
+
+}  
+
+.content{  
+    display: flex;  
+    flex-direction: row;  
+    height: 80vh;  
+}  
+.content2{  
+    display: flex;  
+    flex-direction: row;  
+    height: 20vh
+}
+.dimension1{  
+    height: 20%;  
+    width: 100%;  
+    
+}  
+.cabgeral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;  
+    background-color: #101e3d;  
+    width: 100%;  
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
+    font-size: 200%;
+    
+}
+
+
+
+.dimension2{  
+    height: 100%;  
+    width: 100%;
+    
+    
+}  
+
+.flex{  
+  display: flex;  
+}  
+
+.column{  
+
+    flex-direction: column;  
+
+}  
+
+.temperatura1{  
+
+    height: 90%;  
+    background-color: #14264E;  
+    width: 100%;  
+    border-radius: 30px;   
+    box-shadow: rgb(36, 34, 34) 0px 6px 10px 0px inset; /* esquerda,cima,ao redor,engrossa*/    
+    margin: 3%;
+}  
+
+.tempcab1{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;  
+    background-color: #101e3d;  
+    width: 100%;  
+    border-top-left-radius: 30px;   
+    border-top-right-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
+    
+    
+
+}  
+
+.imagemtemp1 {
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 50%;
+    margin-right: 5%;
+    
+    
+}
+
+.textotemp1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    margin-right: 5%;
+}
+
+     
+
+.temperatura2{  
+
+    height: 90%;       
+    background-color: #14264E; 
+    width: 100%;  
+    border-radius: 30px;   
+    box-shadow: rgb(36, 34, 34) 0px 10px 10px 0px inset; /* esquerda,cima,ao redor,engrossa*/  
+     margin: 3%
+
+}  
+
+.tempcab2{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;  
+    background-color:#101e3d;   
+    width: 100%;  
+    border-top-left-radius: 30px;   
+    border-top-right-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
+    
+
+}  
+
+.imagemtemp2 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 55%;
+    margin-right: 5%;
+}
+.textotemp2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-size: 150%;
+    text-align: center;
+   
+    
+}
+.dimension3{  
+    height:72%;
+    width: 100%;  
+   
+    
+}  
+
+  
+.umidadeext{  
+
+    height:80%;  
+    background-color: #14264E;  
+    width: 100%;  
+    border-radius: 30px;   
+    box-shadow: rgb(36, 34, 34) 0px 6px 10px 0px inset; /* esquerda,cima,ao redor,engrossa*/    
+    margin: 3%;
+
+    
+}  
+.umidadeextcab{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40%;  
+    background-color: #101e3d;  
+    width: 100%;  
+    border-top-left-radius: 30px;   
+    border-top-right-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
+    
+
+}  
+
+.imagemumidadeext {
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 55%;
+    margin-right: -4%;
+    
+    
+}
+
+.textoumidadeext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    margin-right: 5%;
+}
+
+.umidadesolo{  
+    
+    height:80%;  
+    background-color: #14264E;  
+    width: 100%;  
+    border-radius: 30px;   
+    box-shadow: rgb(36, 34, 34) 0px 6px 10px 0px inset; /* esquerda,cima,ao redor,engrossa*/    
+    margin: 3%;
+
+    
+}    
+     
+.umidadesolocab{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40%;  
+    background-color: #101e3d;  
+    width: 100%;  
+    border-top-left-radius: 30px;   
+    border-top-right-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
+    
+
+}  
+.imagemumidadesolo {
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 55;
+    margin-right: -5%;
+    
+    
+}
+.textoumidadesolo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    margin-right: 5%;
+}
+  
+.sla {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  margin: 0;
+  padding: 0;
+}
+
+.dimension4{  
+    width: 100%;  
+    
+}  
+
+.luminosidade{  
+  display: flex;
+  height:40%;  
+  background-color: #14264E;  
+  width: 95%;  
+  border-radius: 30px;   
+  box-shadow: rgb(36, 34, 34) 0px 6px 10px 0px inset; /* esquerda,cima,ao redor,engrossa*/    
+  margin: 2%;
+  margin-top: 3%;
+
+  
+}    
+   
+.luminosidadecab{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:40%;  
+  background-color: #101e3d;  
+  width: 100%;  
+  border-top-left-radius: 30px;   
+  border-top-right-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
+  
+
+}  
+.imagemluminosidade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 50%;
+  margin-left: -10%;
+
+  
+  
+}
+.textoluminosidade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 50%;
+  color: white;
+  font-size: 150%;
+  text-align: center;
+  margin-left: 2%;
+ 
+}
+
+.dimension4{  
+  width: 100%;  
+  
+}  
+
+.botoneira{  
+
+    height:50%;  
+    background-color: #14264E;  
+    width: auto;  
+    border-radius: 30px;   
+    box-shadow: rgb(36, 34, 34) 0px 6px 10px 0px inset; /* esquerda,cima,ao redor,engrossa*/    
+    margin: 3%;
+}
+
+     
+
+
+
+    
+
+.botoneiracab{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:30%;  
+    background-color: #101e3d;  
+    width: 100%;  
+    border-top-left-radius: 30px;   
+    border-top-right-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
+    
+
+}  
+.textobotoneira {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    margin-right: 5%;
+    margin-left:-4% ;
+}
+
+.imagembotoneira {
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 50%;
+    margin-left: 5%;
+
+    
+    
+}
+
+.bot1{   
+    background-color: #14264E;  
+    width: auto;  
+    border-radius: 30px;   
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
+    margin:3%;
+    margin-top:3%;
+   
+}
+.textobot1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    margin-left:-70%;
+    margin-top: 2%;
+    margin-bottom:2% ;
+    
+}
+
+.bot2{  
+
+    background-color: #14264E;  
+    width: auto;  
+    border-radius: 30px;   
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
+    margin:3%;
+    margin-top:3%;
+}
+
+.textobot2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    margin-left:-70%;
+    margin-top: 2%;
+    margin-bottom:2% ;
+    
+}
+.bot3{  
+
+    background-color: #14264E;  
+    width: auto;  
+    border-radius: 30px;   
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
+    margin:3%;
+    margin-top:3%;
+}
+
+.textobot3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    margin-left:-70%;
+    margin-top: 2%;
+    margin-bottom:2% ;
+    
+}
+
+/* The switch - the box around the slider */
+.switch1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+    margin-left:70%;
+    margin-top:1.5% ;
+    
+ 
+    	
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch1 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider1 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider1:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 5.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider1 {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider1 {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider1:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider1.round1 {
+    border-radius: 34px;
+  }
+  
+  .slider1.round1:before {
+    border-radius: 50%;
+  }
+
+  .switch2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+    margin-left:70%;
+    margin-top:1.5% ;
+    
+    	
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch2 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider2 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider2:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 5.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider2 {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider2 {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider2:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider2.round2 {
+    border-radius: 34px;
+  }
+  
+  .slider2.round2:before {
+    border-radius: 50%;
+  }
+  
+
+
+
+  .switch3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+    margin-left:70%;
+    margin-top:1.5% ;
+    
+    	
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch3 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider3 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider3:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 5.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider3 {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider3 {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider3:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider3.round3 {
+    border-radius: 34px;
+  }
+  
+  .slider3.round3:before {
+    border-radius: 50%;
+  }
+  
+  .tanque{  
+
+    height:65%;  
+    background-color: #14264E;  
+    width: auto;  
+    border-radius: 30px;   
+    box-shadow: rgb(36, 34, 34) 0px 6px 10px 0px inset; /* esquerda,cima,ao redor,engrossa*/    
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top:-6% ;
+
+  }
+  .tanquecab{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:30%;  
+    background-color: #101e3d;  
+    width: 100%;  
+    border-top-left-radius: 30px;   
+    border-top-right-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
+    
+
+}  
+.imagemtanque {
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 13%;
+    height: 60%;
+    margin-right: 5%;
+
+    
+    
+}
+.textotanque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    margin-left: -10%;
+}
+.tanquemedida{
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 20%;
+    margin-left: 50%;
+    margin-top: -25%;
+   
+
+    
+}
+.textomedida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-size: 350%;
+    text-align: center;
+    margin-top: 17%;
+    margin-left: 5%;
+    
+    
+}
+.sensor-umidade{
+    font-size: 2em;
+     color: white;
+    font-size: 350%;
+    text-align: center;
+    margin-top: 20%;
+}
+.sensor-umidadesolo{
+  font-size: 2em;
+   color: white;
+  font-size: 350%;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.sensor-temperatura1{
+    font-size: 2em;
+     color: white;
+    font-size: 350%;
+    text-align: center;
+    margin-top: 150%;
+}
+.sensor-temperatura2{
+  font-size: 2em;
+   color: white;
+  font-size: 350%;
+  text-align: center;
+  margin-top: 150%;
+}
+.sensor-tanque{
+    font-size: 2em;
+     color: white;
+    font-size: 350%;
+    margin-top:15%;
+    margin-left: 20%;
+    
+ 
+}.sensor-luz{
+    font-size: 2em;
+     color: white;
+    font-size: 350%;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 42%;
+}
