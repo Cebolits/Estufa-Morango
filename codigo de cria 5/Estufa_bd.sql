@@ -17,3 +17,5 @@ tanque decimal(5,2) not null
 USE funcionalidades;
 
 select * from persons
+
+macaco pleado
