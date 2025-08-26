@@ -18,4 +18,4 @@ USE funcionalidades;
 
 select * from persons
 
-macaco pleado
+abacaxi
