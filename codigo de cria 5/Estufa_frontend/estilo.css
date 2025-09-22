@@ -49,14 +49,40 @@ body{
 }  
 .cabgeral{
     display: flex;
-    justify-content: center;
+    position:relative;
     align-items: center;
+    justify-content: center;
     height: 90%;  
-    background-color: #101e3d;  
+    background-color:#461010;  
     width: 100%;  
     box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
     font-size: 200%;
     
+    
+}
+.imagemcab {
+    justify-self: flex-start;
+    align-self: flex-start;
+    width: 10%;
+    height:100%;
+    position:absolute;
+    left: 30px;
+    
+
+    
+    
+}
+.textocab {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    color: #ecc375;
+    font-size: 150%;
+    text-align: center;
+    margin-left: 25%
+
 }
 
 
@@ -81,7 +107,7 @@ body{
 .temperatura1{  
 
     height: 90%;  
-    background-color: #14264E;  
+    background-color:#681616;  
     width: 100%;  
     border-radius: 30px;   
     box-shadow: rgb(36, 34, 34) 0px 6px 10px 0px inset; /* esquerda,cima,ao redor,engrossa*/    
@@ -93,7 +119,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 20%;  
-    background-color: #101e3d;  
+    background-color:#461010;  
     width: 100%;  
     border-top-left-radius: 30px;   
     border-top-right-radius: 30px;
@@ -120,7 +146,7 @@ body{
     align-items: center;
     height: 50%;
     width: 50%;
-    color: white;
+    color: #ecc375;
     font-size: 150%;
     text-align: center;
     margin-right: 5%;
@@ -131,7 +157,7 @@ body{
 .temperatura2{  
 
     height: 90%;       
-    background-color: #14264E; 
+    background-color: #681616; 
     width: 100%;  
     border-radius: 30px;   
     box-shadow: rgb(36, 34, 34) 0px 10px 10px 0px inset; /* esquerda,cima,ao redor,engrossa*/  
@@ -144,7 +170,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 20%;  
-    background-color:#101e3d;   
+    background-color: #461010;   
     width: 100%;  
     border-top-left-radius: 30px;   
     border-top-right-radius: 30px;
@@ -167,7 +193,7 @@ body{
     align-items: center;
     height: 50%;
     width: 50%;
-    color: white;
+    color: #ecc375;
     font-size: 150%;
     text-align: center;
    
@@ -184,7 +210,7 @@ body{
 .umidadeext{  
 
     height:80%;  
-    background-color: #14264E;  
+    background-color:#681616;  
     width: 100%;  
     border-radius: 30px;   
     box-shadow: rgb(36, 34, 34) 0px 6px 10px 0px inset; /* esquerda,cima,ao redor,engrossa*/    
@@ -197,7 +223,7 @@ body{
     justify-content: center;
     align-items: center;
     height:40%;  
-    background-color: #101e3d;  
+    background-color:#461010;  
     width: 100%;  
     border-top-left-radius: 30px;   
     border-top-right-radius: 30px;
@@ -223,7 +249,7 @@ body{
     align-items: center;
     height: 50%;
     width: 50%;
-    color: white;
+    color: #ecc375;
     font-size: 150%;
     text-align: center;
     margin-right: 5%;
@@ -232,7 +258,7 @@ body{
 .umidadesolo{  
     
     height:80%;  
-    background-color: #14264E;  
+    background-color:#681616;  
     width: 100%;  
     border-radius: 30px;   
     box-shadow: rgb(36, 34, 34) 0px 6px 10px 0px inset; /* esquerda,cima,ao redor,engrossa*/    
@@ -246,7 +272,7 @@ body{
     justify-content: center;
     align-items: center;
     height:40%;  
-    background-color: #101e3d;  
+    background-color: #461010;  
     width: 100%;  
     border-top-left-radius: 30px;   
     border-top-right-radius: 30px;
@@ -270,7 +296,7 @@ body{
     align-items: center;
     height: 50%;
     width: 50%;
-    color: white;
+    color: #ecc375;
     font-size: 150%;
     text-align: center;
     margin-right: 5%;
@@ -291,8 +317,8 @@ body{
 
 .luminosidade{  
   display: flex;
-  height:40%;  
-  background-color: #14264E;  
+  height:35%;  
+  background-color:#681616;  
   width: 95%;  
   border-radius: 30px;   
   box-shadow: rgb(36, 34, 34) 0px 6px 10px 0px inset; /* esquerda,cima,ao redor,engrossa*/    
@@ -306,8 +332,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height:40%;  
-  background-color: #101e3d;  
+  height:35%;  
+  background-color:#461010;  
   width: 100%;  
   border-top-left-radius: 30px;   
   border-top-right-radius: 30px;
@@ -332,7 +358,7 @@ body{
   align-items: center;
   height: 50%;
   width: 50%;
-  color: white;
+  color: #ecc375;
   font-size: 150%;
   text-align: center;
   margin-left: 2%;
@@ -345,9 +371,9 @@ body{
 }  
 
 .botoneira{  
-
-    height:50%;  
-    background-color: #14264E;  
+    
+    height:55%;  
+    background-color:#681616;  
     width: auto;  
     border-radius: 30px;   
     box-shadow: rgb(36, 34, 34) 0px 6px 10px 0px inset; /* esquerda,cima,ao redor,engrossa*/    
@@ -365,7 +391,7 @@ body{
     justify-content: center;
     align-items: center;
     height:30%;  
-    background-color: #101e3d;  
+    background-color:#461010;  
     width: 100%;  
     border-top-left-radius: 30px;   
     border-top-right-radius: 30px;
@@ -379,7 +405,7 @@ body{
     align-items: center;
     height: 50%;
     width: 50%;
-    color: white;
+    color: #ecc375;
     font-size: 150%;
     text-align: center;
     margin-right: 5%;
@@ -399,7 +425,7 @@ body{
 }
 
 .bot1{   
-    background-color: #14264E;  
+    background-color:#681616;  
     width: auto;  
     border-radius: 30px;   
     box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
@@ -413,7 +439,7 @@ body{
     align-items: center;
     height: 50%;
     width: 50%;
-    color: white;
+    color: #ecc375;
     font-size: 150%;
     text-align: center;
     margin-left:-70%;
@@ -424,7 +450,7 @@ body{
 
 .bot2{  
 
-    background-color: #14264E;  
+    background-color:#681616;  
     width: auto;  
     border-radius: 30px;   
     box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
@@ -438,7 +464,7 @@ body{
     align-items: center;
     height: 50%;
     width: 50%;
-    color: white;
+    color: #ecc375;
     font-size: 150%;
     text-align: center;
     margin-left:-70%;
@@ -448,7 +474,7 @@ body{
 }
 .bot3{  
 
-    background-color: #14264E;  
+    background-color:#681616;  
     width: auto;  
     border-radius: 30px;   
     box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
@@ -462,7 +488,31 @@ body{
     align-items: center;
     height: 50%;
     width: 50%;
-    color: white;
+    color: #ecc375;
+    font-size: 150%;
+    text-align: center;
+    margin-left:-70%;
+    margin-top: 2%;
+    margin-bottom:2% ;
+    
+}
+.bot4{  
+
+    background-color:#681616;  
+    width: auto;  
+    border-radius: 30px;   
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -1px;
+    margin:3%;
+    margin-top:3%;
+}
+
+.textobot4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    color: #ecc375;
     font-size: 150%;
     text-align: center;
     margin-left:-70%;
@@ -502,7 +552,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color:#681616;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -520,11 +570,11 @@ body{
   }
   
   input:checked + .slider1 {
-    background-color: #2196F3;
+    background-color: #ecc375;
   }
   
   input:focus + .slider1 {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #ecc375;
   }
   
   input:checked + .slider1:before {
@@ -571,7 +621,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color:#681616;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -589,11 +639,11 @@ body{
   }
   
   input:checked + .slider2 {
-    background-color: #2196F3;
+    background-color: #ecc375;
   }
   
   input:focus + .slider2 {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #ecc375;
   }
   
   input:checked + .slider2:before {
@@ -643,7 +693,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color:#681616;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -661,11 +711,11 @@ body{
   }
   
   input:checked + .slider3 {
-    background-color: #2196F3;
+    background-color: #ecc375;
   }
   
   input:focus + .slider3 {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #ecc375;
   }
   
   input:checked + .slider3:before {
@@ -683,10 +733,78 @@ body{
     border-radius: 50%;
   }
   
+.switch4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+    margin-left:70%;
+    margin-top:1.5% ;
+    
+    	
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch4 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider4 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#681616;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider4:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 5.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider4 {
+    background-color: #ecc375;
+  }
+  
+  input:focus + .slider4 {
+    box-shadow: 0 0 1px #ecc375;
+  }
+  
+  input:checked + .slider4:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider4.round4 {
+    border-radius: 34px;
+  }
+  
+  .slider4.round4:before {
+    border-radius: 50%;
+  }
   .tanque{  
 
     height:65%;  
-    background-color: #14264E;  
+    background-color:#681616;  
     width: auto;  
     border-radius: 30px;   
     box-shadow: rgb(36, 34, 34) 0px 6px 10px 0px inset; /* esquerda,cima,ao redor,engrossa*/    
@@ -700,7 +818,7 @@ body{
     justify-content: center;
     align-items: center;
     height:30%;  
-    background-color: #101e3d;  
+    background-color:#461010;  
     width: 100%;  
     border-top-left-radius: 30px;   
     border-top-right-radius: 30px;
@@ -725,7 +843,7 @@ body{
     align-items: center;
     height: 50%;
     width: 50%;
-    color: white;
+    color: #ecc375;
     font-size: 150%;
     text-align: center;
     margin-left: -10%;
@@ -748,7 +866,8 @@ body{
     align-items: center;
     height: 50%;
     width: 50%;
-    color: white;
+    color:#ecc375;
+;
     font-size: 350%;
     text-align: center;
     margin-top: 17%;
@@ -758,14 +877,15 @@ body{
 }
 .sensor-umidade{
     font-size: 2em;
-     color: white;
+     color: #ecc375;
+;
     font-size: 350%;
     text-align: center;
     margin-top: 20%;
 }
 .sensor-umidadesolo{
   font-size: 2em;
-   color: white;
+   color: #ecc375;
   font-size: 350%;
   text-align: center;
   margin-top: 20%;
@@ -773,21 +893,21 @@ body{
 
 .sensor-temperatura1{
     font-size: 2em;
-     color: white;
+     color: #ecc375;
     font-size: 350%;
     text-align: center;
     margin-top: 150%;
 }
 .sensor-temperatura2{
   font-size: 2em;
-   color: white;
+   color: #ecc375;
   font-size: 350%;
   text-align: center;
   margin-top: 150%;
 }
 .sensor-tanque{
     font-size: 2em;
-     color: white;
+     color: #ecc375;
     font-size: 350%;
     margin-top:15%;
     margin-left: 20%;
@@ -795,7 +915,7 @@ body{
  
 }.sensor-luz{
     font-size: 2em;
-     color: white;
+     color: #ecc375;
     font-size: 350%;
     text-align: center;
     margin-top: 10%;
