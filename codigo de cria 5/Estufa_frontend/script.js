@@ -1,11 +1,15 @@
 import {service} from "./firebaseConnect.js"
-
+const url=" http://localhost:8080"
 service.user = "Estufa-Morango"
 
 const load_data = async () => {
     const data = await service.load();
 }
 load_data()
+
+let dbdata={
+
+}
 
 const bot1=document.getElementById("bot1")
 const bot2=document.getElementById("bot2")
@@ -14,7 +18,10 @@ const bot4=document.getElementById("bot4")
 
 
 // ----------------------- EXEMPLO COLOCANDO DADOS NO FIREBASE ----------------------
+const pegar=()=>{
+    fetch("") 
 
+}
 
 const envia=async ()=>{
     let data = {}
