@@ -1,5 +1,5 @@
 import {service} from "./firebaseConnect.js"
-const url=" http://localhost:8080"
+const urlApi=" http://localhost:8080"
 service.user = "Estufa-Morango"
 
 const load_data = async () => {
@@ -16,11 +16,35 @@ const bot2=document.getElementById("bot2")
 const bot3=document.getElementById("bot3")
 const bot4=document.getElementById("bot4")
 
+const tf=document.getElementById("tf")
+const td=document.getElementById("td")
+const uf=document.getElementById("uf")
+const ud=document.getElementById("ud")
+const t=document.getElementById("t")
+const l=document.getElementById("l")
+
 
 // ----------------------- EXEMPLO COLOCANDO DADOS NO FIREBASE ----------------------
-const pegar=()=>{
-    fetch("") 
+const pegar= async ()=>{
+    const a = await (
+        await (
+            fetch(urlApi+"/sensores",{
+                method: "GET",
+                headers: {
+                    "Content-Type" : "application/json"
+                }
+            })
+        )
+    ).json()
 
+    console.log(a)
+
+    tf.textContent= a.Temperatura_fora +"°C"
+    td.textContent= a.Temperatura_dentro+"°C"
+    uf.textContent= a.Umidade_solo+"%"
+    ud.textContent= a.Umidade+"%"
+    t.textContent= a.Tanque+"%"
+    l.textContent= a.Luminosidade+"%"
 }
 
 const envia=async ()=>{
@@ -45,5 +69,5 @@ bot4.addEventListener("click", envia)
 // ----------------------------------------------------------------------------------
 setInterval(() => {
     load_data();
-
-}, 10000);
+    pegar();
+}, 1000);
